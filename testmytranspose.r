@@ -20,11 +20,11 @@ t(myvar1) == mytranspose(myvar1)
 #vector
 myvar2 <- c(1,2,NA,3)
 mytranspose(myvar2)
-t(myvar2) == mytranspose(myvar2)
+myvar2 == mytranspose(myvar2)
 
 myvar2 <- c(NA)
 mytranspose(myvar2)
-t(myvar2) == mytranspose(myvar2)
+is.na(myvar2) == is.na(mytranspose(myvar2))
 
 myvar2 <- c()
 mytranspose(myvar2)
